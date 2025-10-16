@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n;
+    float val, sum = 0;
+    printf("Enter number of values: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        printf("Enter value %d: ", i);
+        scanf("%f", &val);
+        sum += val;
+    }
+    printf("Sum = %.2f\nMean = %.2f", sum, sum/n);
+    return 0;
+}
