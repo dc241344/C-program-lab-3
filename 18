@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int boys=0, girls=0;
+    char sex;
+    for (int i = 1; i <= 50; i++) {
+        scanf(" %c", &sex);
+        if (sex == 'B' || sex == 'b') boys++;
+        else if (sex == 'G' || sex == 'g') girls++;
+    }
+    printf("Boys=%d Girls=%d", boys, girls);
+    return 0;
+}
