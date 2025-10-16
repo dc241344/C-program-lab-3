@@ -1,0 +1,20 @@
+#include <stdio.h>
+int is_automorphic(int n) {
+    int sq = n * n, k = n;
+    while (k > 0) {
+        if (k % 10 != sq % 10) return 0;
+        k /= 10;
+        sq /= 10;
+    }
+    return 1;
+}
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    if (is_automorphic(n)) printf("Automorphic
+");
+    else printf("Not Automorphic
+");
+    return 0;
+}
